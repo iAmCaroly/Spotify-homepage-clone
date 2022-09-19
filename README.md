@@ -1,2 +1,2 @@
-# Spotify-homepage-clone-
+# Spotify-homepage-clone
 cloning homepage Spotify
