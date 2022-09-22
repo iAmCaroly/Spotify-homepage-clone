@@ -96,7 +96,7 @@ body .bg-white {
     background: none;
 }
 
-.item .btn {
+.btn {
     padding: 17px 48px;
     font-size: 14px;
     line-height: 1;
@@ -201,12 +201,18 @@ body .jumbotron-whats-on {
 .iphone-1, .iphone-4 {
     margin-top: 200px;
 }
+
 .devices-container {
     margin-top: -310px;
     margin-bottom: -620px;
     margin-right: -100%;
     float: left;
     transform: rotate(30deg) translate3d(0,40px,0);
+}
+/*section 4: subscribing*/
+.grid-overflow {
+    margin-right: -100%;
+    float: left;
 }
 
 .devices-container img {
