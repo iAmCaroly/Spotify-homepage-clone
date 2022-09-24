@@ -1,9 +1,9 @@
 @font-face {
-    font-family: Circular;
-    src: url('circular-medium.woff2');
+    font-family: 'Circular';
+    src: url('./circular-medium.woff2');
   }
   body {
-      font-family: Circular, Arial, Helvetica, sans-serif;
+      font-family: 'Circular',Helvetica,Arial,sans-serif;
       font-size: 16px;
       line-height: 1.5;
       color: #222326;
@@ -86,9 +86,10 @@ body .jumbotron {
     text-align: center;
     margin: 0;
     position: relative;
+    overflow: hidden;
 }
 
-body .bg-white {
+.jumbotron.bg-white {
     background-color: #fff;
 }
 
@@ -111,15 +112,20 @@ body .bg-white {
     white-space: normal;
 }
 
+.jumbotron h1 {
+    font-weight: 900;
+}
+
 .jumbotron .btn {
     margin: 20px 10px 30px;
 }
 
-.item .btn-solid {
+.btn.btn-solid {
     color: #fff;
     background-color: #7c25f8;
+    border-radius: 500px;
 }
-.item .btn-solid:hover {
+.btn .btn-solid:hover {
     color: #fff;
     background-color: #6207e3;
 }
@@ -220,12 +226,11 @@ body .jumbotron-whats-on {
 }
 
 /*section 3: all devices*/
-/*have to add body to find*/
-body .jumbotron-devices {
+.jumbotron.jumbotron-devices {
     background: #222326;
 }
 
-.jumbotron-devices img{
+.jumbotron.jumbotron-devices img{
     margin-bottom: 60px;
 }
 
@@ -258,5 +263,199 @@ body .jumbotron-devices {
 .jumbotron-devices .device-list a {
     color: white;
     border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+.jumbotron.jumbotron-subscriptions {
+    padding: 150px 0 0;
+    text-align: left;
+}
+
+.jumbotron.jumbotron-subscriptions .btn {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.price-title {
+    float: left;
+    margin: 0;
+}
+
+.price {
+    float: right;
+    margin: 0 0 12px;
+}
+
+.month {
+    font-size: 20px;
+}
+.details-subscriptions {
+    border: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    padding: 16px 0;
+    padding-left: 0;
+    list-style: none;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.details-subscriptions {
+    font-size: 24px;
+}
+
+.tour-variation p:first-child {
+    float: left;
+}
+
+.tour-variation p:last-child {
+    float: right;
+}
+
+.tour-variation a {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+.tour-variation a:hover {
+    color: #42e3c6;
+}
+
+p.legal {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+p.legal a {
+    text-decoration: underline;
+}
+p.legal a:hover {
+    color: #42e3c6
+}
+
+.nexus{
+    width: 458px;
+    height: 873px;
+    padding: 60px 24px 0 180px;
+    background: url('../img/iphone-klein-purple.png') no-repeat;
+    background-size: cover;
+    margin-bottom: -50%;
+}
+.nexus img {
+    width: 375px;
+    height: 770px;
+    margin-left: -138px;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 80px 0 50px;
+    text-align: left;
+}
+
+.footer-highlight-aquamarine a {
+    color: white;
+}
+
+.footer-highlight-aquamarine a:hover {
+    color: #9bf0e1;
+}
+
+.footer-logo a {
+    display: block;
+    width: 132px;
+    height: 40px;
+    font: 0/0 a;
+    color: transparent;
+    border: 0;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 50px;
+}
+
+.footer .nav-title {
+    color: #919496;
+    font-size: 12px;
+    letter-spacing: .08em;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.footer .nav li a {
+    padding: 3px 0;
+    margin: 0 0 12px;
+}
+
+.col-social {
+    margin-top: 20px;
+}
+
+.footer .col-social ul {
+    float: right;
+}
+
+.footer .col-social li {
+    display: inline-block;
+}
+
+.footer .col-social li a {
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #919496;
+    border-radius: 30px;
+}
+
+.footer .col-social a:hover {
+    background-color: white;
+}
+
+.col-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer .nav-small a {
+    color: #919496;
+}
+
+.footer .nav-small li a {
+    float: left;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 12px;
+    margin: 0;
+}
+
+.row-small {
+    margin-top: 100px;
+}
+
+.footer .nav-small li:first-child a {
+    padding-left: 0;
+}
+
+.flag-icon-us {
+    background-image: url('https://sp-bootstrap.global.ssl.fastly.net/8.0.0/images/flags/us.svg');
+}
+
+.flag-icon {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    font-size: 18px;
+    height: 1em;
+    width: 1.33333333em;
+}
+
+.market, .copyright {
+    color: #919496;
+    font-size: 12px;
+}
+
+a.market {
+    color:#919496;
     text-decoration: none;
 }
